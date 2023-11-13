@@ -1,0 +1,83 @@
+body {
+  background-color: rgb(2, 17, 20);
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+#calculator {
+  padding-top: 15%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  gap: 10px;
+  width: 500px;
+  margin: 0 auto;
+}
+
+#display {
+  border-radius: 5px;
+  border: 10px solid rgb(249, 2, 2);
+  height: 70px;
+  background: #fdfcfc;
+  color: rgb(43, 214, 0);
+  display: flex;
+  font-size: 50px;
+  padding-top: 10px;
+  justify-items: right;
+  justify-content: right;
+  align-items: center;
+  padding-right: 10px;
+  overflow: hidden;
+}
+
+#buttons {
+  gap: 10px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+button {
+  border-radius: 20px;
+  height: 60px;
+  font-size: 2em;
+}
+
+.clear,
+.backspace {
+  grid-column: span 2;
+}
+
+.equals {
+  grid-column: span 4;
+}
+
+.decimal {
+  grid-column: span 2;
+}
+
+.footer {
+  color: #fdfcfc;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  width: 100%;
+  padding: 10px;
+  font-size: 20px;
+}
+
+.fa-github {
+  color: white;
+  font-size: 24px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.fa-github:hover {
+  transform: rotate(360deg) scale(1.2);
+}
